@@ -1,11 +1,11 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import postRoutes from '../src/routes/post';
+import postRoutes from './routes/post'; // This is if `index.ts` and `routes` are in the same directory
 import connectDB from './config/database';
 import dotenv from 'dotenv';
-import signupRoutes from "../src/routes/signup"
-import signinRoutes from "../src/routes/signin"
-import verifyOtpRoutes from "../src/routes/verifyotp"
+import signupRoutes from "./routes/signup"
+import signinRoutes from "./routes/signin"
+import verifyOtpRoutes from "./routes/verifyotp"
 // Load environment variables
 dotenv.config();
 
